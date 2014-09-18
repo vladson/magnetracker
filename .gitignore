@@ -1,0 +1,5 @@
+build/*
+node_modules
+extension.zip
+extension/
+.DS_Store
