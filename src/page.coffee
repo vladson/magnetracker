@@ -12,7 +12,7 @@ class MagnetAdder
     @hash = $('#tor-hash').text()
     @name = $('.post_body').first().children().first().text()
     if ! @name
-      @name = $($('.post_body').first().children()).text()
+      @name = $($('.post_body').first().children()[1]).text()
     @display_name = encodeURIComponent(@name)
     @renderMagnetLink() if @hash
 
