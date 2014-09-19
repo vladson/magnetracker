@@ -11,8 +11,10 @@ class MagnetAdder
   constructor: ->
     @hash = $('#tor-hash').text()
     @name = $('.post_body').first().children().first().text()
-    @display_name = encodeURIComponent(@name) if @name
-    @renderMagnetLink() if @name and @hash
+    if ! @name
+      @name = $($('.post_body').first().children()).text()
+    @display_name = encodeURIComponent(@name)
+    @renderMagnetLink() if @hash
 
   renderMagnetLink: ->
     $('.post_body').first().find('tr.row1').first().children().last().children().first().append(@template(@))

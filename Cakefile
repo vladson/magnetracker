@@ -70,6 +70,6 @@ task 'compress', 'Package a zip for Google Chrome Store', ->
     src: ['**']
     dest: 'resources'
   ,
-    src: ["manifest.json", "popup.html", "LICENSE"]
+    src: ["manifest.json", "LICENSE"]
   ]
   archive.finalize();
