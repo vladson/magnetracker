@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Magnetracker",
     "description": "This extension adds magnet links to rutracker.org site.",
-    "version": "1.22",
+    "version": "1.23",
     "author": "Vladislav Bogomolov <vladson4ik@gmail.com>",
     "icons": {
         "16": "resources/icon_16.png",

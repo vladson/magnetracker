@@ -13,6 +13,8 @@ class MagnetAdder
     @name = $('.post_body').first().children().first().text()
     if ! @name
       @name = $($('.post_body').first().children()[1]).text()
+    if ! @name
+      @name = 'Some Torrent'
     @display_name = encodeURIComponent(@name)
     @renderMagnetLink() if @hash
 
